@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  threat-hunter:
+    build: .
+    container_name: threat-hunter-container
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
